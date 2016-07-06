@@ -2,23 +2,15 @@ require_relative "config/environment"
 require 'rspec/core/rake_task'
 require 'active_support/core_ext'
 
-
-
-
 task :default => :spec
 
 desc "Run the spec suite"
 RSpec::Core::RakeTask.new(:spec)
 
-
-
-
 desc 'Start IRB with application environment loaded'
 task "console" do
   exec "irb -r ./config/environment"
 end
-
-
 
 
 namespace :db do
@@ -28,7 +20,6 @@ namespace :db do
     touch "db/database.sqlite3"
     touch "db/test-database.sqlite3"
   end
-
 
   desc "Drop the database"
   task :drop do
@@ -83,8 +74,6 @@ namespace :db do
     puts "Current version: #{ActiveRecord::Migrator.current_version}"
   end
 end
-
-
 
 
 namespace :generate do
