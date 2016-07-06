@@ -7,9 +7,9 @@ task :default => :spec
 desc "Run the spec suite"
 RSpec::Core::RakeTask.new(:spec)
 
-desc 'Start IRB with application environment loaded'
+desc 'Start pry with application environment loaded'
 task "console" do
-  exec "irb -r ./config/environment"
+  exec "pry -r ./config/environment"
 end
 
 
