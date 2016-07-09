@@ -4,7 +4,7 @@ class CreateFilmsTable < ActiveRecord::Migration
 			t.string :name, {null: false}
 			t.string :runtime
 
-			t.timestamp(null: false)
+			t.timestamps(null: false)
   	end
   end
 end
