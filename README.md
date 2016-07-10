@@ -14,6 +14,9 @@ A user can review a film. Users must be able to
 search for a review by movie. Each user should
 also be able to look at the reviews of another
 user. Also, film titles should not be duplicated.
+###### Visualized Schema
+![MVP Schema](images/schema.jpg)
+
 #### Stretch
 A user should be able to review a review, the
 goal being able to talk about how a review was
